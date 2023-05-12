@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MediVault | Records</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+  <script src="./createandaccess.js"></script>
+  <link rel="stylesheet" href="style/records.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="image1.png" height="35px" margin="0px" style="margin:-12px -5px"></a></li>
+        <li><a href="patientadd.html">Patients</a></li>
+        <li><a href="records.html">Create Records</a></li>
+        <li><a href="accessrecord.html">Access Records</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="records">
+    <h2>Access Records</h2>
+    <label>Patient ID:</label>
+    <input type="text" id="patient-id" required>
+
+    <section>
+      <div id="personal-information">
+
+      </div>
+      <table>
+        <tbody id="info"></tbody>
+      </table>
+      <br>
+      <div id="record-information"></div>
+      <table>
+        <tbody id="record"></tbody>
+        
+      </table>
+    </section>
+    <button id="deploy-record-button" onclick="accessrecord()">Access</button>
+  </div>
+  <footer>
+    <p>&copy; MediVault | Stark Tech - GFG Solving for India</p>
+  </footer>
+</body>
+
+</html>
